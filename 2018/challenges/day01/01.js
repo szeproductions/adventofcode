@@ -17,7 +17,7 @@ const searchFrequency = (inputArr) => {
   return frequencies;
 }
 
-const findFirstDuplicate = (lines) => {
+const findFirstDuplicate2 = (lines) => {
   const frequencies = searchFrequency(lines);
   const offset = frequencies.reduce((a, b) => a+b, 0);
 
