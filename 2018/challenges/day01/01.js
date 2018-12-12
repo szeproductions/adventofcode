@@ -17,7 +17,7 @@ const searchFrequency = (inputArr) => {
   return frequencies;
 }
 
-const findFirstDuplicate2 = (lines) => {
+const findFirstDuplicate = (lines) => {
   const frequencies = searchFrequency(lines);
   const offset = frequencies.reduce((a, b) => a+b, 0);
 
@@ -30,7 +30,7 @@ const findFirstDuplicate = (lines) => {
   let duplicate = null;
 
   let index = 0;
-  console.time('Task2');
+  // console.time('Task2');
   while(duplicate === null) {
     if(index >= frequencies.length) {
       index = 0;
@@ -44,7 +44,7 @@ const findFirstDuplicate = (lines) => {
 
     calcFreqArr.push(newFreq);
   }
-  console.log(calcFreqArr.length);
-  console.timeEnd('Task2');
+  // console.log(calcFreqArr.length);
+  // console.timeEnd('Task2');
   return duplicate;
 }
